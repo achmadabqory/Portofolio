@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+/* Warna dan font website. Nama di sini menjadi class Tailwind:
+   --color-ink  -> bg-ink, text-ink, border-ink
+   --font-display -> font-display */
+@theme {
+  --color-ink: #0b0b0c;     /* hitam: latar utama */
+  --color-panel: #141416;   /* hitam sedikit lebih terang: kartu dan section selang-seling */
+  --color-line: #2a2a2e;    /* abu gelap: garis tepi */
+  --color-fg: #f5f5f5;      /* putih lembut: teks utama */
+  --color-mute: #a1a1aa;    /* abu: teks pendukung */
+
+  --font-sans: "DM Sans", system-ui, sans-serif;
+  --font-display: "Bricolage Grotesque", "DM Sans", system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+  }
+  body {
+    @apply bg-ink font-sans text-fg antialiased;
+  }
+  :focus-visible {
+    outline: 2px solid #fff;
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+  }
+}
+
+/* Gaya yang dipakai berulang, supaya HTML tidak penuh class panjang */
+@layer components {
+  .nav-link {
+    @apply relative block px-4 py-2 text-sm font-medium text-mute transition-colors
+      hover:text-white aria-[current=page]:text-white
+      after:absolute after:inset-x-4 after:bottom-0 after:h-px after:origin-left after:scale-x-0
+      after:bg-white after:transition-transform
+      hover:after:scale-x-100 aria-[current=page]:after:scale-x-100;
+  }
+  .btn {
+    @apply inline-flex items-center justify-center rounded-full border px-6 py-3 font-medium
+      transition-colors;
+  }
+  .btn-white {
+    @apply border-white bg-white text-black hover:bg-transparent hover:text-white;
+  }
+  .btn-outline {
+    @apply border-line text-white hover:border-white;
+  }
+  .section-title {
+    @apply font-display text-3xl font-extrabold tracking-tight md:text-5xl;
+  }
+  .input {
+    @apply w-full rounded-xl border border-line bg-ink px-4 py-3 text-fg placeholder:text-mute
+      focus:border-white focus:outline-none;
+  }
+}

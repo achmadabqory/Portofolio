@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="src/output.css" rel="stylesheet">
+  <script src="src/main.js"></script>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="sticky top-0 z-50 backdrop-blur-lg">
+    <nav class="mx-auto flex h-16 max-w-6xl items-center justify-between px-5" aria-label="Menu utama">
+      <a href="#home" class="font-display text-xl font-extrabold text-white">Afif</a>
+      <ul class="flex items-center">
+        <li><a class="nav-link" href="#home">Home</a></li>
+        <li><a class="nav-link" href="#about">About</a></li>
+        <li><a class="nav-link" href="#hasil">Hasil</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HOME Halaman 1 -->
+    <section id="home" class="py-12 md:py-24">
+        <div class="mx-auto grid max-w-6xl items-center gap-10 px-5 md:grid-cols-[auto_1fr] md:gap-16">
+            <figure class="mx-auto w-56 md:w-72">
+                <!-- fotoku -->
+                 <img src="assets/fotoku.jpeg" alt="abqory afif" width="300" height="400"
+                  class="aspect-3/4 w-full rounded-2xl border-line object-cover">
+            </figure>
+            
+        <div>
+          <p class="text-mute">Halo, saya</p>
+          <h1 class="mt-2 font-display text-5xl font-extrabold leading-none tracking-tight md:text-7xl">Achmad Abqory Afif</h1>
+          <p class="mt-5 max-w-md text-lg text-mute">Web developer yang suka membangun tampilan yang rapi, enak di pandang dan mudah digunakan.</p>
+
+          <ul class="mt-8 flex flex-wrap gap-3" aria-label="Bahasa pemrograman yang dikuasai">
+            <li class="group relative">
+              <img src="assets/js.png" alt="JavaScript" class="size-12 rounded-xl transition-transform group-hover:-translate-y-1">
+              <span class="pointer-events-none absolute -top-9 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-md bg-white px-2 py-1 text-xs font-medium text-black opacity-0 transition-opacity group-hover:opacity-100">JavaScript</span>
+            </li>
+            <li class="group relative">
+              <img src="assets/python.png" alt="Python" class="size-12 rounded-xl transition-transform group-hover:-translate-y-1">
+              <span class="pointer-events-none absolute -top-9 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-md bg-white px-2 py-1 text-xs font-medium text-black opacity-0 transition-opacity group-hover:opacity-100">Python</span>
+            </li>
+            <li class="group relative">
+              <img src="assets/php.png" alt="PHP" class="size-12 rounded-xl transition-transform group-hover:-translate-y-1">
+              <span class="pointer-events-none absolute -top-9 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-md bg-white px-2 py-1 text-xs font-medium text-black opacity-0 transition-opacity group-hover:opacity-100">PHP</span>
+            </li>
+            <li class="group relative">
+              <img src="assets/html.png" alt="HTML" class="size-12 rounded-xl transition-transform group-hover:-translate-y-1">
+              <span class="pointer-events-none absolute -top-9 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-md bg-white px-2 py-1 text-xs font-medium text-black opacity-0 transition-opacity group-hover:opacity-100">HTML</span>
+            </li>
+            <li class="group relative">
+              <img src="assets/css.png"CSS" class="size-12 rounded-xl transition-transform group-hover:-translate-y-1">
+              <span class="pointer-events-none absolute -top-9 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-md bg-white px-2 py-1 text-xs font-medium text-black opacity-0 transition-opacity group-hover:opacity-100">CSS</span>
+            </li>
+          </ul>
+
+          <div class="mt-9 flex flex-wrap gap-3">
+            <a class="btn btn-white" href="./assets/cv.pdf" download>Download CV</a>
+            <a class="btn btn-outline" href="#hasil">Lihat hasil karya</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT Halaman 2 -->
+    <section id="about" class="bg-panel py-20 md:py-28">
+      <div class="mx-auto max-w-6xl px-5">
+        <h2 class="section-title">Tentang saya</h2>
+
+        <div class="mt-10 grid gap-12 lg:grid-cols-2 lg:gap-20">
+          <div class="space-y-4 text-mute">
+            <p>Halo!, Nama saya Achmad Abqory Afif, Saya adalah seorang developer Dari SMKN 1 PURWOSARI. Saya membuat website dan aplikasi yang rapi, enak dilihat, dan gampang dipakai.</p>
+            <p>Saya juga terbiasa mengerjakan project dari nol : dari merancang tampilan, menulis kode, lalu menguji hasilnya. Saya senang belajar teknologi baru dan bekerja sama dalam tim.</p>
+            <a class="btn btn-white mt-4" href="./assets/cv.pdf" download>Download CV</a>
+          </div>
+
+          <div class="space-y-8">
+            <div>
+              <h3 class="font-display text-lg font-bold">Bahasa pemrograman</h3>
+              <ul class="mt-3 grid grid-cols-2 gap-3 sm:grid-cols-3">
+                <li class="flex items-center gap-3 rounded-xl border border-line bg-ink p-3 transition-colors hover:border-white"><img src="assets/js.png" alt="javascript" class="size-9 rounded-lg"><span class="text-sm font-medium">JavaScript</span></li>
+                <li class="flex items-center gap-3 rounded-xl border border-line bg-ink p-3 transition-colors hover:border-white"><img src="assets/python.png" alt="python" class="size-9 rounded-lg"><span class="text-sm font-medium">Python</span></li>
+                <li class="flex items-center gap-3 rounded-xl border border-line bg-ink p-3 transition-colors hover:border-white"><img src="assets/php.png" alt="PHP" class="size-9 rounded-lg"><span class="text-sm font-medium">PHP</span></li>
+                <li class="flex items-center gap-3 rounded-xl border border-line bg-ink p-3 transition-colors hover:border-white"><img src="assets/html.png" alt="html" class="size-9 rounded-lg"><span class="text-sm font-medium">HTML</span></li>
+                <li class="flex items-center gap-3 rounded-xl border border-line bg-ink p-3 transition-colors hover:border-white"><img src="assets/css.png" alt="css" class="size-9 rounded-lg"><span class="text-sm font-medium">CSS</span></li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 class="font-display text-lg font-bold">Framework dan library</h3>
+              <ul class="mt-3 grid grid-cols-2 gap-3 sm:grid-cols-3">
+                <li class="flex items-center gap-3 rounded-xl border border-line bg-ink p-3 transition-colors hover:border-white"><img src="assets/flutter.png" alt="react" class="size-9 rounded-lg"><span class="text-sm font-medium">Flutter</span></li>
+                <li class="flex items-center gap-3 rounded-xl border border-line bg-ink p-3 transition-colors hover:border-white"><img src="assets/laravel.webp" alt="laravel" class="size-9 rounded-lg"><span class="text-sm font-medium">Laravel</span></li>
+                <li class="flex items-center gap-3 rounded-xl border border-line bg-ink p-3 transition-colors hover:border-white"><img src="assets/nodejs.png" alt="nodejs" class="size-9 rounded-lg"><span class="text-sm font-medium">Node.js</span></li>
+                <li class="flex items-center gap-3 rounded-xl border border-line bg-ink p-3 transition-colors hover:border-white"><img src="assets/tailwindcss.png" alt="tailwindcss" class="size-9 rounded-lg"><span class="text-sm font-medium">Tailwind CSS</span></li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 class="font-display text-lg font-bold">Alat kerja</h3>
+              <ul class="mt-3 grid grid-cols-2 gap-3 sm:grid-cols-3">
+                <li class="flex items-center gap-3 rounded-xl border border-line bg-ink p-3 transition-colors hover:border-white"><img src="assets/git.png" alt="git" class="size-9 rounded-lg"><span class="text-sm font-medium">Git</span></li>
+                <li class="flex items-center gap-3 rounded-xl border border-line bg-ink p-3 transition-colors hover:border-white"><img src="assets/github.png" alt="github" class="size-9 rounded-lg"><span class="text-sm font-medium">GitHub</span></li>
+                <li class="flex items-center gap-3 rounded-xl border border-line bg-ink p-3 transition-colors hover:border-white"><img src="assets/figma.png" alt="figma" class="size-9 rounded-lg"><span class="text-sm font-medium">Figma</span></li>
+                <li class="flex items-center gap-3 rounded-xl border border-line bg-ink p-3 transition-colors hover:border-white"><img src="assets/mysql.png" alt="mysql" class="size-9 rounded-lg"><span class="text-sm font-medium">MySQL</span></li>
+                <li class="flex items-center gap-3 rounded-xl border border-line bg-ink p-3 transition-colors hover:border-white"><img src="assets/vscode.webp" alt="Vscode" class="size-9 rounded-lg"><span class="text-sm font-medium">VSCode</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projet Halaman 3 -->
+    <section id="hasil" class="py-20 md:py-28">
+      <div class="mx-auto max-w-6xl px-5">
+        <h2 class="section-title">Hasil karya</h2>
+        <p class="mt-3 max-w-lg text-mute">Beberapa proyek yang pernah saya kerjakan.</p>
+
+        <div class="mt-10 grid gap-6 md:grid-cols-6">
+
+          <!-- Tabel Project 1 -->
+          <article class="flex flex-col overflow-hidden rounded-2xl border border-line bg-panel transition-colors hover:border-white md:col-span-2">
+            <div class="aspect-16/10" aria-hidden="true">
+              <img src="assets/project1.png" alt="kedaikopi" class="w-full h-full">
+            </div>
+            <div class="flex flex-1 flex-col gap-3 p-6">
+              <h3 class="font-display text-xl font-bold">Warung Kedai Kopi</h3>
+              <p class="text-mute">Warung yang menyediakan berbagai makanan dan berbagai jenis kopi.</p>
+              <ul class="flex flex-wrap gap-2 text-xs text-mute">
+                <li class="rounded-md bg-ink px-2 py-1">HTML</li><li class="rounded-md bg-ink px-2 py-1">CSS</li><li class="rounded-md bg-ink px-2 py-1">JS</li>
+              </ul>
+              <a href="https://achmadabqory.github.io/website-kedai-kopi/" class="mt-auto pt-2 font-medium text-white underline-offset-4 hover:underline">Lihat proyek &rarr;</a>
+            </div>
+          </article>
+
+          <!-- Tabel Project 2 -->
+          <article class="flex flex-col overflow-hidden rounded-2xl border border-line bg-panel transition-colors hover:border-white md:col-span-2">
+            <div class="aspect-16/10" aria-hidden="true">
+              <img src="assets/project2.png" alt="baduy" class="w-full h-full">
+            </div>
+            <div class="flex flex-1 flex-col gap-3 p-6">
+              <h3 class="font-display text-xl font-bold">website baduy</h3>
+              <p class="text-mute">website yang diambil dari baduy studio untuk pembelajaran</p>
+              <ul class="flex flex-wrap gap-2 text-xs text-mute">
+                <li class="rounded-md bg-ink px-2 py-1">HTML</li><li class="rounded-md bg-ink px-2 py-1">CSS</li>
+              </ul>
+              <a href="https://achmadabqory.github.io/webiste/" class="mt-auto pt-2 font-medium text-white underline-offset-4 hover:underline">Lihat proyek &rarr;</a>
+            </div>
+          </article>
+
+          <!-- Tabel Project 3 -->
+          <article class="flex flex-col overflow-hidden rounded-2xl border border-line bg-panel transition-colors hover:border-white md:col-span-2">
+            <div class="aspect-16/10" aria-hidden="true">
+              <img src="assets/project3.png" alt="login dan sign in" class="w-full h-full">
+            </div>
+            <div class="flex flex-1 flex-col gap-3 p-6">
+              <h3 class="font-display text-xl font-bold">Login and sign</h3>
+              <p class="text-mute">website login dan sign in</p>
+              <ul class="flex flex-wrap gap-2 text-xs text-mute">
+                <li class="rounded-md bg-ink px-2 py-1">HTML</li><li class="rounded-md bg-ink px-2 py-1">CSS</li><li class="rounded-md bg-ink px-2 py-1">JS</li>
+              </ul>
+              <a href="https://achmadabqory.github.io/login-and-sign/" class="mt-auto pt-2 font-medium text-white underline-offset-4 hover:underline">Lihat proyek &rarr;</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT Halaman 4 -->
+    <section id="contact" class="bg-panel py-20 md:py-28">
+      <div class="mx-auto max-w-6xl px-5">
+        <h2 class="section-title">Hubungi Saya</h2>
+        <p class="mt-4 max-w-xl text-mute">Punya project, ide, atau tawaran kerja sama? Ayo tulis kebutuhanmu secara singkat, nanti saya balas secepatnya lewat Gmail.</p>
+
+        <div class="mt-12 grid gap-12 lg:grid-cols-2 lg:gap-20">
+          <div>
+            <h3 class="font-display text-lg font-bold">Saya bisa membantu untuk</h3>
+            <ul class="mt-3 space-y-2 text-mute">
+              <li>Membuat website dari nol</li>
+              <li>Memperbaiki atau memperbagus tampilan website</li>
+              <li>Mengerjakan project bersama tim</li>
+              <li>Peluang magang atau pekerjaan</li>
+            </ul>
+
+            <a href="mailto:achmadabqoryafif@gmail.com" class="mt-8 inline-block break-all font-display text-2xl font-bold underline decoration-line underline-offset-8 transition-colors hover:decoration-white md:text-3xl">achmadabqoryafif@gmail.com</a>
+
+            <h3 class="mt-10 font-display text-lg font-bold">Media sosial</h3>
+            <ul class="mt-3 grid gap-3 sm:grid-cols-2">
+              <li>
+                <a href="https://github.com/achmadabqory" class="flex items-center gap-3 rounded-xl border border-line bg-ink p-3 transition-colors hover:border-white">
+                  <img src="assets/github.png" alt="" class="size-10 rounded-lg">
+                  <span><span class="block font-medium">GitHub</span><span class="block text-sm text-mute">achmadabqory</span></span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/abqory1234/" class="flex items-center gap-3 rounded-xl border border-line bg-ink p-3 transition-colors hover:border-white">
+                  <img src="assets/instagram.png" alt="" class="size-10 rounded-lg">
+                  <span><span class="block font-medium">Instagram</span><span class="block text-sm text-mute">abqory1234</span></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="space-y-4 rounded-2xl border border-line bg-ink p-6" role="group" aria-label="Kirim pesan">
+            <div>
+              <label for="cName" class="mb-1.5 block text-sm font-medium">Nama</label>
+              <input id="cName" type="text" autocomplete="name" placeholder="Nama kamu" class="input">
+            </div>
+            <div>
+              <label for="cMsg" class="mb-1.5 block text-sm font-medium">Pesan</label>
+              <textarea id="cMsg" rows="6" placeholder="Tulis pesanmu di sini" class="input resize-y"></textarea>
+            </div>
+            <button id="sendBtn" type="button" class="btn btn-white w-full cursor-pointer">Kirim lewat Gmail</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-line py-6 text-center text-sm text-mute">
+    <p>&copy; <span id="year"></span> Abqory Afif.</p>
+  </footer>
+
+</body>
+</html>
